@@ -1,0 +1,727 @@
+2025-08-14T12:09:08.962+05:30  INFO 8828 --- [Property-Service] [restartedMain] c.w.p.PropertyServiceApplication         : Starting PropertyServiceApplication using Java 21.0.7 with PID 8828 (D:\Microservices Assignment\Property-Service\target\classes started by sss in D:\Microservices Assignment\Property-Service)
+2025-08-14T12:09:08.970+05:30  INFO 8828 --- [Property-Service] [restartedMain] c.w.p.PropertyServiceApplication         : No active profile set, falling back to 1 default profile: "default"
+2025-08-14T12:09:09.055+05:30  INFO 8828 --- [Property-Service] [restartedMain] o.s.c.c.c.ConfigServerConfigDataLoader   : Fetching config from server at : http://localhost:9093
+2025-08-14T12:09:09.055+05:30  INFO 8828 --- [Property-Service] [restartedMain] o.s.c.c.c.ConfigServerConfigDataLoader   : Located environment: name=Property-Service, profiles=[default], label=null, version=577b693cfd8cfeb4cb55e085595edf2a58283140, state=
+2025-08-14T12:09:09.059+05:30  INFO 8828 --- [Property-Service] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-08-14T12:09:09.059+05:30  INFO 8828 --- [Property-Service] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-08-14T12:09:10.727+05:30  INFO 8828 --- [Property-Service] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-14T12:09:10.891+05:30  INFO 8828 --- [Property-Service] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 152 ms. Found 1 JPA repository interface.
+2025-08-14T12:09:11.236+05:30  INFO 8828 --- [Property-Service] [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=da4328cd-0594-3367-8a9d-cbb6ab1cb424
+2025-08-14T12:09:11.889+05:30  INFO 8828 --- [Property-Service] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-08-14T12:09:11.911+05:30  INFO 8828 --- [Property-Service] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-14T12:09:11.912+05:30  INFO 8828 --- [Property-Service] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-08-14T12:09:11.978+05:30  INFO 8828 --- [Property-Service] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-08-14T12:09:11.978+05:30  INFO 8828 --- [Property-Service] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2918 ms
+2025-08-14T12:09:12.395+05:30  INFO 8828 --- [Property-Service] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-14T12:09:12.478+05:30  INFO 8828 --- [Property-Service] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.22.Final
+2025-08-14T12:09:12.532+05:30  INFO 8828 --- [Property-Service] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-08-14T12:09:12.909+05:30  INFO 8828 --- [Property-Service] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-14T12:09:12.950+05:30  INFO 8828 --- [Property-Service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-08-14T12:09:13.587+05:30  INFO 8828 --- [Property-Service] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@53deb8f2
+2025-08-14T12:09:13.591+05:30  INFO 8828 --- [Property-Service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-08-14T12:09:13.740+05:30  WARN 8828 --- [Property-Service] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-08-14T12:09:13.769+05:30  INFO 8828 --- [Property-Service] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.42
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-14T12:09:14.880+05:30  INFO 8828 --- [Property-Service] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-14T12:09:14.990+05:30  INFO 8828 --- [Property-Service] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-14T12:09:15.111+05:30  WARN 8828 --- [Property-Service] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-14T12:09:15.165+05:30  INFO 8828 --- [Property-Service] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-08-14T12:09:16.387+05:30  INFO 8828 --- [Property-Service] [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2025-08-14T12:09:16.415+05:30  WARN 8828 --- [Property-Service] [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-08-14T12:09:16.504+05:30  INFO 8828 --- [Property-Service] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoints beneath base path '/actuator'
+2025-08-14T12:09:16.619+05:30  INFO 8828 --- [Property-Service] [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2025-08-14T12:09:16.646+05:30  INFO 8828 --- [Property-Service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2025-08-14T12:09:16.651+05:30  INFO 8828 --- [Property-Service] [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-14T12:09:16.661+05:30  INFO 8828 --- [Property-Service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2025-08-14T12:09:16.661+05:30  INFO 8828 --- [Property-Service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2025-08-14T12:09:16.662+05:30  INFO 8828 --- [Property-Service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2025-08-14T12:09:16.662+05:30  INFO 8828 --- [Property-Service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2025-08-14T12:09:16.662+05:30  INFO 8828 --- [Property-Service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2025-08-14T12:09:16.662+05:30  INFO 8828 --- [Property-Service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2025-08-14T12:09:16.662+05:30  INFO 8828 --- [Property-Service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2025-08-14T12:09:16.961+05:30  INFO 8828 --- [Property-Service] [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2025-08-14T12:09:16.964+05:30  INFO 8828 --- [Property-Service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2025-08-14T12:09:16.968+05:30  INFO 8828 --- [Property-Service] [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-08-14T12:09:16.970+05:30  INFO 8828 --- [Property-Service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1755153556970 with initial instances count: 1
+2025-08-14T12:09:16.975+05:30  INFO 8828 --- [Property-Service] [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application PROPERTY-SERVICE with eureka with status UP
+2025-08-14T12:09:16.975+05:30  INFO 8828 --- [Property-Service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1755153556975, current=UP, previous=STARTING]
+2025-08-14T12:09:16.977+05:30  INFO 8828 --- [Property-Service] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PROPERTY-SERVICE/DESKTOP-EM164SF:Property-Service:8080: registering service...
+2025-08-14T12:09:16.985+05:30  INFO 8828 --- [Property-Service] [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application PROPERTY-SERVICE with eureka with status DOWN
+2025-08-14T12:09:16.985+05:30  INFO 8828 --- [Property-Service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1755153556985, current=DOWN, previous=UP]
+2025-08-14T12:09:16.985+05:30  WARN 8828 --- [Property-Service] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+2025-08-14T12:09:16.995+05:30  INFO 8828 --- [Property-Service] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-14T12:09:17.002+05:30  INFO 8828 --- [Property-Service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-08-14T12:09:17.032+05:30  INFO 8828 --- [Property-Service] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PROPERTY-SERVICE/DESKTOP-EM164SF:Property-Service:8080 - registration status: 204
+2025-08-14T12:09:17.032+05:30  INFO 8828 --- [Property-Service] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PROPERTY-SERVICE/DESKTOP-EM164SF:Property-Service:8080: registering service...
+2025-08-14T12:09:17.039+05:30  INFO 8828 --- [Property-Service] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PROPERTY-SERVICE/DESKTOP-EM164SF:Property-Service:8080 - registration status: 204
+2025-08-14T12:09:17.049+05:30  INFO 8828 --- [Property-Service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-08-14T12:09:17.050+05:30  INFO 8828 --- [Property-Service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2025-08-14T12:09:20.065+05:30  INFO 8828 --- [Property-Service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2025-08-14T12:09:20.094+05:30  INFO 8828 --- [Property-Service] [restartedMain] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PROPERTY-SERVICE/DESKTOP-EM164SF:Property-Service:8080 - deregister  status: 200
+2025-08-14T12:09:20.094+05:30  INFO 8828 --- [Property-Service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2025-08-14T12:09:20.123+05:30  INFO 8828 --- [Property-Service] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-08-14T12:09:20.150+05:30 ERROR 8828 --- [Property-Service] [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+2025-08-14T12:09:35.730+05:30  INFO 4404 --- [Property-Service] [restartedMain] c.w.p.PropertyServiceApplication         : Starting PropertyServiceApplication using Java 21.0.7 with PID 4404 (D:\Microservices Assignment\Property-Service\target\classes started by sss in D:\Microservices Assignment\Property-Service)
+2025-08-14T12:09:35.732+05:30  INFO 4404 --- [Property-Service] [restartedMain] c.w.p.PropertyServiceApplication         : No active profile set, falling back to 1 default profile: "default"
+2025-08-14T12:09:35.788+05:30  INFO 4404 --- [Property-Service] [restartedMain] o.s.c.c.c.ConfigServerConfigDataLoader   : Fetching config from server at : http://localhost:9093
+2025-08-14T12:09:35.789+05:30  INFO 4404 --- [Property-Service] [restartedMain] o.s.c.c.c.ConfigServerConfigDataLoader   : Located environment: name=Property-Service, profiles=[default], label=null, version=577b693cfd8cfeb4cb55e085595edf2a58283140, state=
+2025-08-14T12:09:35.792+05:30  INFO 4404 --- [Property-Service] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-08-14T12:09:35.794+05:30  INFO 4404 --- [Property-Service] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-08-14T12:09:37.052+05:30  INFO 4404 --- [Property-Service] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-14T12:09:37.206+05:30  INFO 4404 --- [Property-Service] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 143 ms. Found 1 JPA repository interface.
+2025-08-14T12:09:37.452+05:30  INFO 4404 --- [Property-Service] [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=da4328cd-0594-3367-8a9d-cbb6ab1cb424
+2025-08-14T12:09:38.085+05:30  INFO 4404 --- [Property-Service] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-08-14T12:09:38.101+05:30  INFO 4404 --- [Property-Service] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-14T12:09:38.101+05:30  INFO 4404 --- [Property-Service] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-08-14T12:09:38.165+05:30  INFO 4404 --- [Property-Service] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-08-14T12:09:38.165+05:30  INFO 4404 --- [Property-Service] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2370 ms
+2025-08-14T12:09:38.556+05:30  INFO 4404 --- [Property-Service] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-14T12:09:38.609+05:30  INFO 4404 --- [Property-Service] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.22.Final
+2025-08-14T12:09:38.653+05:30  INFO 4404 --- [Property-Service] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-08-14T12:09:38.945+05:30  INFO 4404 --- [Property-Service] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-14T12:09:38.979+05:30  INFO 4404 --- [Property-Service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-08-14T12:09:39.372+05:30  INFO 4404 --- [Property-Service] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@47cab84
+2025-08-14T12:09:39.378+05:30  INFO 4404 --- [Property-Service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-08-14T12:09:39.444+05:30  WARN 4404 --- [Property-Service] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-08-14T12:09:39.462+05:30  INFO 4404 --- [Property-Service] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.42
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-14T12:09:40.420+05:30  INFO 4404 --- [Property-Service] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-14T12:09:40.477+05:30  INFO 4404 --- [Property-Service] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-14T12:09:40.588+05:30  WARN 4404 --- [Property-Service] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-14T12:09:40.641+05:30  INFO 4404 --- [Property-Service] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-08-14T12:09:41.681+05:30  INFO 4404 --- [Property-Service] [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2025-08-14T12:09:41.708+05:30  WARN 4404 --- [Property-Service] [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-08-14T12:09:41.728+05:30  INFO 4404 --- [Property-Service] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoints beneath base path '/actuator'
+2025-08-14T12:09:41.839+05:30  INFO 4404 --- [Property-Service] [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2025-08-14T12:09:41.876+05:30  INFO 4404 --- [Property-Service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2025-08-14T12:09:41.882+05:30  INFO 4404 --- [Property-Service] [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-14T12:09:41.893+05:30  INFO 4404 --- [Property-Service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2025-08-14T12:09:41.893+05:30  INFO 4404 --- [Property-Service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2025-08-14T12:09:41.893+05:30  INFO 4404 --- [Property-Service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2025-08-14T12:09:41.894+05:30  INFO 4404 --- [Property-Service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2025-08-14T12:09:41.894+05:30  INFO 4404 --- [Property-Service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2025-08-14T12:09:41.894+05:30  INFO 4404 --- [Property-Service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2025-08-14T12:09:41.895+05:30  INFO 4404 --- [Property-Service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2025-08-14T12:09:42.185+05:30  INFO 4404 --- [Property-Service] [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2025-08-14T12:09:42.187+05:30  INFO 4404 --- [Property-Service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2025-08-14T12:09:42.191+05:30  INFO 4404 --- [Property-Service] [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-08-14T12:09:42.192+05:30  INFO 4404 --- [Property-Service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1755153582192 with initial instances count: 1
+2025-08-14T12:09:42.198+05:30  INFO 4404 --- [Property-Service] [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application PROPERTY-SERVICE with eureka with status UP
+2025-08-14T12:09:42.199+05:30  INFO 4404 --- [Property-Service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1755153582199, current=UP, previous=STARTING]
+2025-08-14T12:09:42.200+05:30  INFO 4404 --- [Property-Service] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PROPERTY-SERVICE/DESKTOP-EM164SF:Property-Service:8080: registering service...
+2025-08-14T12:09:42.207+05:30  INFO 4404 --- [Property-Service] [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application PROPERTY-SERVICE with eureka with status DOWN
+2025-08-14T12:09:42.207+05:30  INFO 4404 --- [Property-Service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1755153582207, current=DOWN, previous=UP]
+2025-08-14T12:09:42.207+05:30  WARN 4404 --- [Property-Service] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+2025-08-14T12:09:42.217+05:30  INFO 4404 --- [Property-Service] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-14T12:09:42.222+05:30  INFO 4404 --- [Property-Service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-08-14T12:09:42.229+05:30  INFO 4404 --- [Property-Service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-08-14T12:09:42.230+05:30  INFO 4404 --- [Property-Service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2025-08-14T12:09:42.253+05:30  INFO 4404 --- [Property-Service] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PROPERTY-SERVICE/DESKTOP-EM164SF:Property-Service:8080 - registration status: 204
+2025-08-14T12:09:42.254+05:30  INFO 4404 --- [Property-Service] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PROPERTY-SERVICE/DESKTOP-EM164SF:Property-Service:8080: registering service...
+2025-08-14T12:09:42.260+05:30  INFO 4404 --- [Property-Service] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PROPERTY-SERVICE/DESKTOP-EM164SF:Property-Service:8080 - registration status: 204
+2025-08-14T12:09:42.261+05:30  INFO 4404 --- [Property-Service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2025-08-14T12:09:42.268+05:30  INFO 4404 --- [Property-Service] [restartedMain] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PROPERTY-SERVICE/DESKTOP-EM164SF:Property-Service:8080 - deregister  status: 200
+2025-08-14T12:09:42.268+05:30  INFO 4404 --- [Property-Service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2025-08-14T12:09:42.289+05:30  INFO 4404 --- [Property-Service] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2025-08-14T12:09:42.315+05:30 ERROR 4404 --- [Property-Service] [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+2025-08-14T12:12:35.510+05:30  INFO 868 --- [Property-Service] [restartedMain] c.w.p.PropertyServiceApplication         : Starting PropertyServiceApplication using Java 21.0.7 with PID 868 (D:\Microservices Assignment\Property-Service\target\classes started by sss in D:\Microservices Assignment\Property-Service)
+2025-08-14T12:12:35.512+05:30  INFO 868 --- [Property-Service] [restartedMain] c.w.p.PropertyServiceApplication         : No active profile set, falling back to 1 default profile: "default"
+2025-08-14T12:12:35.576+05:30  INFO 868 --- [Property-Service] [restartedMain] o.s.c.c.c.ConfigServerConfigDataLoader   : Fetching config from server at : http://localhost:9093
+2025-08-14T12:12:35.576+05:30  INFO 868 --- [Property-Service] [restartedMain] o.s.c.c.c.ConfigServerConfigDataLoader   : Located environment: name=Property-Service, profiles=[default], label=null, version=577b693cfd8cfeb4cb55e085595edf2a58283140, state=
+2025-08-14T12:12:35.579+05:30  INFO 868 --- [Property-Service] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-08-14T12:12:35.579+05:30  INFO 868 --- [Property-Service] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-08-14T12:12:36.687+05:30  INFO 868 --- [Property-Service] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-14T12:12:36.835+05:30  INFO 868 --- [Property-Service] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 137 ms. Found 1 JPA repository interface.
+2025-08-14T12:12:37.062+05:30  INFO 868 --- [Property-Service] [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=da4328cd-0594-3367-8a9d-cbb6ab1cb424
+2025-08-14T12:12:37.603+05:30  INFO 868 --- [Property-Service] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2025-08-14T12:12:37.619+05:30  INFO 868 --- [Property-Service] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-14T12:12:37.620+05:30  INFO 868 --- [Property-Service] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-08-14T12:12:37.716+05:30  INFO 868 --- [Property-Service] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-08-14T12:12:37.717+05:30  INFO 868 --- [Property-Service] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2137 ms
+2025-08-14T12:12:38.101+05:30  INFO 868 --- [Property-Service] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-14T12:12:38.162+05:30  INFO 868 --- [Property-Service] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.22.Final
+2025-08-14T12:12:38.205+05:30  INFO 868 --- [Property-Service] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-08-14T12:12:38.482+05:30  INFO 868 --- [Property-Service] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-14T12:12:38.516+05:30  INFO 868 --- [Property-Service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-08-14T12:12:38.914+05:30  INFO 868 --- [Property-Service] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@496273d0
+2025-08-14T12:12:38.916+05:30  INFO 868 --- [Property-Service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-08-14T12:12:38.976+05:30  WARN 868 --- [Property-Service] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-08-14T12:12:38.998+05:30  INFO 868 --- [Property-Service] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.42
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-14T12:12:39.884+05:30  INFO 868 --- [Property-Service] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-14T12:12:39.938+05:30  INFO 868 --- [Property-Service] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-14T12:12:40.058+05:30  WARN 868 --- [Property-Service] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-14T12:12:40.121+05:30  INFO 868 --- [Property-Service] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-08-14T12:12:41.123+05:30  INFO 868 --- [Property-Service] [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2025-08-14T12:12:41.150+05:30  WARN 868 --- [Property-Service] [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-08-14T12:12:41.164+05:30  INFO 868 --- [Property-Service] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoints beneath base path '/actuator'
+2025-08-14T12:12:41.269+05:30  INFO 868 --- [Property-Service] [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2025-08-14T12:12:41.300+05:30  INFO 868 --- [Property-Service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2025-08-14T12:12:41.305+05:30  INFO 868 --- [Property-Service] [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-14T12:12:41.314+05:30  INFO 868 --- [Property-Service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2025-08-14T12:12:41.315+05:30  INFO 868 --- [Property-Service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2025-08-14T12:12:41.315+05:30  INFO 868 --- [Property-Service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2025-08-14T12:12:41.316+05:30  INFO 868 --- [Property-Service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2025-08-14T12:12:41.316+05:30  INFO 868 --- [Property-Service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2025-08-14T12:12:41.316+05:30  INFO 868 --- [Property-Service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2025-08-14T12:12:41.316+05:30  INFO 868 --- [Property-Service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2025-08-14T12:12:41.626+05:30  INFO 868 --- [Property-Service] [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2025-08-14T12:12:41.629+05:30  INFO 868 --- [Property-Service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2025-08-14T12:12:41.631+05:30  INFO 868 --- [Property-Service] [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-08-14T12:12:41.635+05:30  INFO 868 --- [Property-Service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1755153761635 with initial instances count: 1
+2025-08-14T12:12:41.639+05:30  INFO 868 --- [Property-Service] [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application PROPERTY-SERVICE with eureka with status UP
+2025-08-14T12:12:41.640+05:30  INFO 868 --- [Property-Service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1755153761640, current=UP, previous=STARTING]
+2025-08-14T12:12:41.643+05:30  INFO 868 --- [Property-Service] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PROPERTY-SERVICE/DESKTOP-EM164SF:Property-Service:8081: registering service...
+2025-08-14T12:12:41.689+05:30  INFO 868 --- [Property-Service] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
+2025-08-14T12:12:41.690+05:30  INFO 868 --- [Property-Service] [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8081
+2025-08-14T12:12:41.701+05:30  INFO 868 --- [Property-Service] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PROPERTY-SERVICE/DESKTOP-EM164SF:Property-Service:8081 - registration status: 204
+2025-08-14T12:12:41.741+05:30  INFO 868 --- [Property-Service] [restartedMain] c.w.p.PropertyServiceApplication         : Started PropertyServiceApplication in 7.869 seconds (process running for 8.934)
+2025-08-14T12:12:42.166+05:30  INFO 868 --- [Property-Service] [RMI TCP Connection(6)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-14T12:12:42.167+05:30  INFO 868 --- [Property-Service] [RMI TCP Connection(6)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-08-14T12:12:42.168+05:30  INFO 868 --- [Property-Service] [RMI TCP Connection(6)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-08-14T12:14:16.717+05:30  INFO 868 --- [Property-Service] [RMI TCP Connection(15)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2025-08-14T12:14:16.718+05:30  INFO 868 --- [Property-Service] [RMI TCP Connection(15)-127.0.0.1] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application PROPERTY-SERVICE with eureka with status DOWN
+2025-08-14T12:14:16.719+05:30  INFO 868 --- [Property-Service] [RMI TCP Connection(15)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1755153856719, current=DOWN, previous=UP]
+2025-08-14T12:14:16.719+05:30  INFO 868 --- [Property-Service] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PROPERTY-SERVICE/DESKTOP-EM164SF:Property-Service:8081: registering service...
+2025-08-14T12:14:16.721+05:30  INFO 868 --- [Property-Service] [RMI TCP Connection(15)-127.0.0.1] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-14T12:14:16.729+05:30  INFO 868 --- [Property-Service] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-08-14T12:14:16.738+05:30  INFO 868 --- [Property-Service] [RMI TCP Connection(15)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-14T12:14:16.741+05:30  INFO 868 --- [Property-Service] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PROPERTY-SERVICE/DESKTOP-EM164SF:Property-Service:8081 - registration status: 204
+2025-08-14T12:14:16.744+05:30  INFO 868 --- [Property-Service] [RMI TCP Connection(15)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-08-14T12:14:16.750+05:30  INFO 868 --- [Property-Service] [RMI TCP Connection(15)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-08-14T12:14:16.752+05:30  INFO 868 --- [Property-Service] [RMI TCP Connection(15)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2025-08-14T22:19:16.365+05:30  INFO 4780 --- [Property-Service] [restartedMain] c.w.p.PropertyServiceApplication         : Starting PropertyServiceApplication using Java 21.0.7 with PID 4780 (D:\Microservices Assignment\Property-Service\target\classes started by sss in D:\Microservices Assignment\Property-Service)
+2025-08-14T22:19:16.461+05:30  INFO 4780 --- [Property-Service] [restartedMain] c.w.p.PropertyServiceApplication         : No active profile set, falling back to 1 default profile: "default"
+2025-08-14T22:19:16.520+05:30  INFO 4780 --- [Property-Service] [restartedMain] o.s.c.c.c.ConfigServerConfigDataLoader   : Fetching config from server at : http://localhost:9093
+2025-08-14T22:19:16.520+05:30  INFO 4780 --- [Property-Service] [restartedMain] o.s.c.c.c.ConfigServerConfigDataLoader   : Located environment: name=Property-Service, profiles=[default], label=null, version=577b693cfd8cfeb4cb55e085595edf2a58283140, state=
+2025-08-14T22:19:16.523+05:30  INFO 4780 --- [Property-Service] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-08-14T22:19:16.523+05:30  INFO 4780 --- [Property-Service] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-08-14T22:19:17.726+05:30  INFO 4780 --- [Property-Service] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-14T22:19:17.862+05:30  INFO 4780 --- [Property-Service] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 126 ms. Found 1 JPA repository interface.
+2025-08-14T22:19:18.066+05:30  INFO 4780 --- [Property-Service] [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=8fcdc992-a7e9-3573-b160-1be82d089710
+2025-08-14T22:19:18.775+05:30  INFO 4780 --- [Property-Service] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2025-08-14T22:19:18.788+05:30  INFO 4780 --- [Property-Service] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-14T22:19:18.789+05:30  INFO 4780 --- [Property-Service] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-08-14T22:19:18.909+05:30  INFO 4780 --- [Property-Service] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-08-14T22:19:18.909+05:30  INFO 4780 --- [Property-Service] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2385 ms
+2025-08-14T22:19:19.254+05:30  INFO 4780 --- [Property-Service] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-14T22:19:19.301+05:30  INFO 4780 --- [Property-Service] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.22.Final
+2025-08-14T22:19:19.335+05:30  INFO 4780 --- [Property-Service] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-08-14T22:19:19.605+05:30  INFO 4780 --- [Property-Service] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-14T22:19:19.634+05:30  INFO 4780 --- [Property-Service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-08-14T22:19:20.104+05:30  INFO 4780 --- [Property-Service] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@790c110d
+2025-08-14T22:19:20.106+05:30  INFO 4780 --- [Property-Service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-08-14T22:19:20.159+05:30  WARN 4780 --- [Property-Service] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-08-14T22:19:20.176+05:30  INFO 4780 --- [Property-Service] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.42
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-14T22:19:21.010+05:30  INFO 4780 --- [Property-Service] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-14T22:19:21.231+05:30  INFO 4780 --- [Property-Service] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-14T22:19:21.338+05:30  WARN 4780 --- [Property-Service] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-14T22:19:21.386+05:30  WARN 4780 --- [Property-Service] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2025-08-14T22:19:22.397+05:30  INFO 4780 --- [Property-Service] [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2025-08-14T22:19:22.419+05:30  WARN 4780 --- [Property-Service] [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-08-14T22:19:22.436+05:30  INFO 4780 --- [Property-Service] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoints beneath base path '/actuator'
+2025-08-14T22:19:22.532+05:30  INFO 4780 --- [Property-Service] [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2025-08-14T22:19:22.561+05:30  INFO 4780 --- [Property-Service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2025-08-14T22:19:22.566+05:30  INFO 4780 --- [Property-Service] [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-14T22:19:22.574+05:30  INFO 4780 --- [Property-Service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2025-08-14T22:19:22.575+05:30  INFO 4780 --- [Property-Service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2025-08-14T22:19:22.575+05:30  INFO 4780 --- [Property-Service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2025-08-14T22:19:22.575+05:30  INFO 4780 --- [Property-Service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2025-08-14T22:19:22.575+05:30  INFO 4780 --- [Property-Service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2025-08-14T22:19:22.575+05:30  INFO 4780 --- [Property-Service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2025-08-14T22:19:22.575+05:30  INFO 4780 --- [Property-Service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2025-08-14T22:19:22.855+05:30  INFO 4780 --- [Property-Service] [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2025-08-14T22:19:22.857+05:30  INFO 4780 --- [Property-Service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2025-08-14T22:19:22.859+05:30  INFO 4780 --- [Property-Service] [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-08-14T22:19:22.862+05:30  INFO 4780 --- [Property-Service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1755190162860 with initial instances count: 1
+2025-08-14T22:19:22.865+05:30  INFO 4780 --- [Property-Service] [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application PROPERTY-SERVICE with eureka with status UP
+2025-08-14T22:19:22.866+05:30  INFO 4780 --- [Property-Service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1755190162866, current=UP, previous=STARTING]
+2025-08-14T22:19:22.867+05:30  INFO 4780 --- [Property-Service] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PROPERTY-SERVICE/DESKTOP-EM164SF:Property-Service:8081: registering service...
+2025-08-14T22:19:22.904+05:30  INFO 4780 --- [Property-Service] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
+2025-08-14T22:19:22.905+05:30  INFO 4780 --- [Property-Service] [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8081
+2025-08-14T22:19:22.916+05:30  INFO 4780 --- [Property-Service] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PROPERTY-SERVICE/DESKTOP-EM164SF:Property-Service:8081 - registration status: 204
+2025-08-14T22:19:22.933+05:30  INFO 4780 --- [Property-Service] [restartedMain] c.w.p.PropertyServiceApplication         : Started PropertyServiceApplication in 11.503 seconds (process running for 12.658)
+2025-08-14T22:19:23.439+05:30  INFO 4780 --- [Property-Service] [RMI TCP Connection(6)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-14T22:19:23.440+05:30  INFO 4780 --- [Property-Service] [RMI TCP Connection(6)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-08-14T22:19:23.441+05:30  INFO 4780 --- [Property-Service] [RMI TCP Connection(6)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2025-08-14T22:23:04.572+05:30  INFO 4780 --- [Property-Service] [RMI TCP Connection(15)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2025-08-14T22:23:04.574+05:30  INFO 4780 --- [Property-Service] [RMI TCP Connection(15)-127.0.0.1] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application PROPERTY-SERVICE with eureka with status DOWN
+2025-08-14T22:23:04.574+05:30  INFO 4780 --- [Property-Service] [RMI TCP Connection(15)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1755190384574, current=DOWN, previous=UP]
+2025-08-14T22:23:04.574+05:30  INFO 4780 --- [Property-Service] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PROPERTY-SERVICE/DESKTOP-EM164SF:Property-Service:8081: registering service...
+2025-08-14T22:23:04.585+05:30  INFO 4780 --- [Property-Service] [RMI TCP Connection(15)-127.0.0.1] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-14T22:23:04.591+05:30  INFO 4780 --- [Property-Service] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-08-14T22:23:04.599+05:30  INFO 4780 --- [Property-Service] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PROPERTY-SERVICE/DESKTOP-EM164SF:Property-Service:8081 - registration status: 204
+2025-08-14T22:23:04.604+05:30  INFO 4780 --- [Property-Service] [RMI TCP Connection(15)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-14T22:23:04.609+05:30  INFO 4780 --- [Property-Service] [RMI TCP Connection(15)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-08-14T22:23:04.618+05:30  INFO 4780 --- [Property-Service] [RMI TCP Connection(15)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-08-14T22:23:04.620+05:30  INFO 4780 --- [Property-Service] [RMI TCP Connection(15)-127.0.0.1] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2025-08-14T22:28:02.552+05:30  INFO 144 --- [Property-Service] [restartedMain] c.w.p.PropertyServiceApplication         : Starting PropertyServiceApplication using Java 21.0.7 with PID 144 (D:\Microservices Assignment\Property-Service\target\classes started by sss in D:\Microservices Assignment\Property-Service)
+2025-08-14T22:28:02.554+05:30  INFO 144 --- [Property-Service] [restartedMain] c.w.p.PropertyServiceApplication         : No active profile set, falling back to 1 default profile: "default"
+2025-08-14T22:28:02.619+05:30  INFO 144 --- [Property-Service] [restartedMain] o.s.c.c.c.ConfigServerConfigDataLoader   : Fetching config from server at : http://localhost:9093
+2025-08-14T22:28:02.619+05:30  INFO 144 --- [Property-Service] [restartedMain] o.s.c.c.c.ConfigServerConfigDataLoader   : Located environment: name=Property-Service, profiles=[default], label=null, version=577b693cfd8cfeb4cb55e085595edf2a58283140, state=
+2025-08-14T22:28:02.621+05:30  INFO 144 --- [Property-Service] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-08-14T22:28:02.621+05:30  INFO 144 --- [Property-Service] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-08-14T22:28:03.804+05:30  INFO 144 --- [Property-Service] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-14T22:28:03.934+05:30  INFO 144 --- [Property-Service] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 121 ms. Found 1 JPA repository interface.
+2025-08-14T22:28:04.151+05:30  INFO 144 --- [Property-Service] [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=a53ba9dc-2f78-3bb5-b199-b99a45db9320
+2025-08-14T22:28:04.736+05:30  INFO 144 --- [Property-Service] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2025-08-14T22:28:04.750+05:30  INFO 144 --- [Property-Service] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-14T22:28:04.750+05:30  INFO 144 --- [Property-Service] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-08-14T22:28:04.815+05:30  INFO 144 --- [Property-Service] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-08-14T22:28:04.816+05:30  INFO 144 --- [Property-Service] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2194 ms
+2025-08-14T22:28:05.185+05:30  INFO 144 --- [Property-Service] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-14T22:28:05.235+05:30  INFO 144 --- [Property-Service] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.22.Final
+2025-08-14T22:28:05.270+05:30  INFO 144 --- [Property-Service] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-08-14T22:28:05.535+05:30  INFO 144 --- [Property-Service] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-14T22:28:05.565+05:30  INFO 144 --- [Property-Service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-08-14T22:28:05.938+05:30  INFO 144 --- [Property-Service] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@514e0c17
+2025-08-14T22:28:05.940+05:30  INFO 144 --- [Property-Service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-08-14T22:28:05.991+05:30  WARN 144 --- [Property-Service] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-08-14T22:28:06.008+05:30  INFO 144 --- [Property-Service] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.42
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-14T22:28:06.842+05:30  INFO 144 --- [Property-Service] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-14T22:28:06.899+05:30  INFO 144 --- [Property-Service] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-14T22:28:07.077+05:30  WARN 144 --- [Property-Service] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-14T22:28:07.126+05:30  WARN 144 --- [Property-Service] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2025-08-14T22:28:08.141+05:30  INFO 144 --- [Property-Service] [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2025-08-14T22:28:08.171+05:30  WARN 144 --- [Property-Service] [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-08-14T22:28:08.183+05:30  INFO 144 --- [Property-Service] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoints beneath base path '/actuator'
+2025-08-14T22:28:08.280+05:30  INFO 144 --- [Property-Service] [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2025-08-14T22:28:08.304+05:30  INFO 144 --- [Property-Service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2025-08-14T22:28:08.308+05:30  INFO 144 --- [Property-Service] [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-14T22:28:08.318+05:30  INFO 144 --- [Property-Service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2025-08-14T22:28:08.318+05:30  INFO 144 --- [Property-Service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2025-08-14T22:28:08.318+05:30  INFO 144 --- [Property-Service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2025-08-14T22:28:08.319+05:30  INFO 144 --- [Property-Service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2025-08-14T22:28:08.319+05:30  INFO 144 --- [Property-Service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2025-08-14T22:28:08.319+05:30  INFO 144 --- [Property-Service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2025-08-14T22:28:08.319+05:30  INFO 144 --- [Property-Service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2025-08-14T22:28:08.594+05:30  INFO 144 --- [Property-Service] [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2025-08-14T22:28:08.596+05:30  INFO 144 --- [Property-Service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2025-08-14T22:28:08.599+05:30  INFO 144 --- [Property-Service] [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-08-14T22:28:08.601+05:30  INFO 144 --- [Property-Service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1755190688601 with initial instances count: 2
+2025-08-14T22:28:08.605+05:30  INFO 144 --- [Property-Service] [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application PROPERTY-SERVICE with eureka with status UP
+2025-08-14T22:28:08.606+05:30  INFO 144 --- [Property-Service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1755190688606, current=UP, previous=STARTING]
+2025-08-14T22:28:08.607+05:30  INFO 144 --- [Property-Service] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PROPERTY-SERVICE/DESKTOP-EM164SF:Property-Service:8081: registering service...
+2025-08-14T22:28:08.631+05:30  INFO 144 --- [Property-Service] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
+2025-08-14T22:28:08.632+05:30  INFO 144 --- [Property-Service] [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8081
+2025-08-14T22:28:08.655+05:30  INFO 144 --- [Property-Service] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PROPERTY-SERVICE/DESKTOP-EM164SF:Property-Service:8081 - registration status: 204
+2025-08-14T22:28:08.656+05:30  INFO 144 --- [Property-Service] [restartedMain] c.w.p.PropertyServiceApplication         : Started PropertyServiceApplication in 9.795 seconds (process running for 10.762)
+2025-08-14T22:28:09.326+05:30  INFO 144 --- [Property-Service] [RMI TCP Connection(6)-127.0.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-08-14T22:28:09.326+05:30  INFO 144 --- [Property-Service] [RMI TCP Connection(6)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2025-08-14T22:28:09.329+05:30  INFO 144 --- [Property-Service] [RMI TCP Connection(6)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2025-08-14T22:32:33.762+05:30  INFO 144 --- [Property-Service] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 3 class path changes (0 additions, 0 deletions, 3 modifications)
+2025-08-14T22:32:33.765+05:30  INFO 144 --- [Property-Service] [Thread-1] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application PROPERTY-SERVICE with eureka with status DOWN
+2025-08-14T22:32:33.765+05:30  INFO 144 --- [Property-Service] [Thread-1] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1755190953765, current=DOWN, previous=UP]
+2025-08-14T22:32:33.765+05:30  INFO 144 --- [Property-Service] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PROPERTY-SERVICE/DESKTOP-EM164SF:Property-Service:8081: registering service...
+2025-08-14T22:32:33.769+05:30  INFO 144 --- [Property-Service] [Thread-1] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-14T22:32:33.774+05:30  INFO 144 --- [Property-Service] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PROPERTY-SERVICE/DESKTOP-EM164SF:Property-Service:8081 - registration status: 204
+2025-08-14T22:32:33.777+05:30  INFO 144 --- [Property-Service] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-08-14T22:32:33.792+05:30  INFO 144 --- [Property-Service] [Thread-1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-14T22:32:33.797+05:30  INFO 144 --- [Property-Service] [Thread-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2025-08-14T22:32:33.806+05:30  INFO 144 --- [Property-Service] [Thread-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2025-08-14T22:32:33.807+05:30  INFO 144 --- [Property-Service] [Thread-1] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2025-08-14T22:32:36.819+05:30  INFO 144 --- [Property-Service] [Thread-1] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2025-08-14T22:32:36.837+05:30  INFO 144 --- [Property-Service] [Thread-1] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PROPERTY-SERVICE/DESKTOP-EM164SF:Property-Service:8081 - deregister  status: 200
+2025-08-14T22:32:36.838+05:30  INFO 144 --- [Property-Service] [Thread-1] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2025-08-14T22:32:37.959+05:30  INFO 144 --- [Property-Service] [restartedMain] c.w.p.PropertyServiceApplication         : Starting PropertyServiceApplication using Java 21.0.7 with PID 144 (D:\Microservices Assignment\Property-Service\target\classes started by sss in D:\Microservices Assignment\Property-Service)
+2025-08-14T22:32:37.959+05:30  INFO 144 --- [Property-Service] [restartedMain] c.w.p.PropertyServiceApplication         : No active profile set, falling back to 1 default profile: "default"
+2025-08-14T22:32:37.962+05:30  INFO 144 --- [Property-Service] [restartedMain] o.s.c.c.c.ConfigServerConfigDataLoader   : Fetching config from server at : http://localhost:9093
+2025-08-14T22:32:37.962+05:30  INFO 144 --- [Property-Service] [restartedMain] o.s.c.c.c.ConfigServerConfigDataLoader   : Located environment: name=Property-Service, profiles=[default], label=null, version=577b693cfd8cfeb4cb55e085595edf2a58283140, state=
+2025-08-14T22:32:38.575+05:30  INFO 144 --- [Property-Service] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-14T22:32:38.590+05:30  INFO 144 --- [Property-Service] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 12 ms. Found 1 JPA repository interface.
+2025-08-14T22:32:38.701+05:30  INFO 144 --- [Property-Service] [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=a53ba9dc-2f78-3bb5-b199-b99a45db9320
+2025-08-14T22:32:38.840+05:30  INFO 144 --- [Property-Service] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2025-08-14T22:32:38.842+05:30  INFO 144 --- [Property-Service] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-14T22:32:38.842+05:30  INFO 144 --- [Property-Service] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-08-14T22:32:39.029+05:30  INFO 144 --- [Property-Service] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-08-14T22:32:39.029+05:30  INFO 144 --- [Property-Service] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1067 ms
+2025-08-14T22:32:39.147+05:30  INFO 144 --- [Property-Service] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-14T22:32:39.150+05:30  INFO 144 --- [Property-Service] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-08-14T22:32:39.159+05:30  INFO 144 --- [Property-Service] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-14T22:32:39.160+05:30  INFO 144 --- [Property-Service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2025-08-14T22:32:39.177+05:30  INFO 144 --- [Property-Service] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1ce86a83
+2025-08-14T22:32:39.177+05:30  INFO 144 --- [Property-Service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2025-08-14T22:32:39.179+05:30  WARN 144 --- [Property-Service] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-08-14T22:32:39.179+05:30  INFO 144 --- [Property-Service] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-2)']
+	Database driver: undefined/unknown
+	Database version: 8.0.42
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-14T22:32:39.225+05:30  INFO 144 --- [Property-Service] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-14T22:32:39.257+05:30  INFO 144 --- [Property-Service] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-14T22:32:39.343+05:30  WARN 144 --- [Property-Service] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-14T22:32:39.369+05:30  WARN 144 --- [Property-Service] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2025-08-14T22:32:39.789+05:30  INFO 144 --- [Property-Service] [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2025-08-14T22:32:39.807+05:30  WARN 144 --- [Property-Service] [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-08-14T22:32:39.817+05:30  INFO 144 --- [Property-Service] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoints beneath base path '/actuator'
+2025-08-14T22:32:39.855+05:30  INFO 144 --- [Property-Service] [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2025-08-14T22:32:39.859+05:30  INFO 144 --- [Property-Service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2025-08-14T22:32:39.859+05:30  INFO 144 --- [Property-Service] [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-14T22:32:39.859+05:30  INFO 144 --- [Property-Service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2025-08-14T22:32:39.859+05:30  INFO 144 --- [Property-Service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2025-08-14T22:32:39.859+05:30  INFO 144 --- [Property-Service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2025-08-14T22:32:39.860+05:30  INFO 144 --- [Property-Service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2025-08-14T22:32:39.860+05:30  INFO 144 --- [Property-Service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2025-08-14T22:32:39.860+05:30  INFO 144 --- [Property-Service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2025-08-14T22:32:39.860+05:30  INFO 144 --- [Property-Service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2025-08-14T22:32:39.914+05:30  INFO 144 --- [Property-Service] [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2025-08-14T22:32:39.915+05:30  INFO 144 --- [Property-Service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2025-08-14T22:32:39.916+05:30  INFO 144 --- [Property-Service] [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-08-14T22:32:39.916+05:30  INFO 144 --- [Property-Service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1755190959916 with initial instances count: 5
+2025-08-14T22:32:39.918+05:30  INFO 144 --- [Property-Service] [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application PROPERTY-SERVICE with eureka with status UP
+2025-08-14T22:32:39.918+05:30  INFO 144 --- [Property-Service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1755190959918, current=UP, previous=STARTING]
+2025-08-14T22:32:39.918+05:30  INFO 144 --- [Property-Service] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PROPERTY-SERVICE/DESKTOP-EM164SF:Property-Service:8081: registering service...
+2025-08-14T22:32:39.923+05:30  INFO 144 --- [Property-Service] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
+2025-08-14T22:32:39.923+05:30  INFO 144 --- [Property-Service] [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8081
+2025-08-14T22:32:39.950+05:30  INFO 144 --- [Property-Service] [restartedMain] c.w.p.PropertyServiceApplication         : Started PropertyServiceApplication in 3.001 seconds (process running for 282.056)
+2025-08-14T22:32:39.953+05:30  INFO 144 --- [Property-Service] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-08-14T22:32:39.957+05:30  INFO 144 --- [Property-Service] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PROPERTY-SERVICE/DESKTOP-EM164SF:Property-Service:8081 - registration status: 204
+2025-08-14T22:37:39.875+05:30  INFO 144 --- [Property-Service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-14T22:40:21.643+05:30  INFO 144 --- [Property-Service] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 3 class path changes (0 additions, 0 deletions, 3 modifications)
+2025-08-14T22:40:21.673+05:30  INFO 144 --- [Property-Service] [Thread-7] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application PROPERTY-SERVICE with eureka with status DOWN
+2025-08-14T22:40:21.675+05:30  INFO 144 --- [Property-Service] [Thread-7] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1755191421675, current=DOWN, previous=UP]
+2025-08-14T22:40:21.676+05:30  INFO 144 --- [Property-Service] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PROPERTY-SERVICE/DESKTOP-EM164SF:Property-Service:8081: registering service...
+2025-08-14T22:40:21.710+05:30  INFO 144 --- [Property-Service] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PROPERTY-SERVICE/DESKTOP-EM164SF:Property-Service:8081 - registration status: 204
+2025-08-14T22:40:21.738+05:30  INFO 144 --- [Property-Service] [Thread-7] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-14T22:40:21.760+05:30  INFO 144 --- [Property-Service] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-08-14T22:40:21.801+05:30  INFO 144 --- [Property-Service] [Thread-7] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-14T22:40:21.822+05:30  INFO 144 --- [Property-Service] [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2025-08-14T22:40:21.851+05:30  INFO 144 --- [Property-Service] [Thread-7] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2025-08-14T22:40:21.856+05:30  INFO 144 --- [Property-Service] [Thread-7] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2025-08-14T22:40:24.863+05:30  INFO 144 --- [Property-Service] [Thread-7] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2025-08-14T22:40:24.915+05:30  INFO 144 --- [Property-Service] [Thread-7] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PROPERTY-SERVICE/DESKTOP-EM164SF:Property-Service:8081 - deregister  status: 200
+2025-08-14T22:40:24.915+05:30  INFO 144 --- [Property-Service] [Thread-7] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2025-08-14T22:40:26.625+05:30  INFO 144 --- [Property-Service] [restartedMain] c.w.p.PropertyServiceApplication         : Starting PropertyServiceApplication using Java 21.0.7 with PID 144 (D:\Microservices Assignment\Property-Service\target\classes started by sss in D:\Microservices Assignment\Property-Service)
+2025-08-14T22:40:26.625+05:30  INFO 144 --- [Property-Service] [restartedMain] c.w.p.PropertyServiceApplication         : No active profile set, falling back to 1 default profile: "default"
+2025-08-14T22:40:26.628+05:30  INFO 144 --- [Property-Service] [restartedMain] o.s.c.c.c.ConfigServerConfigDataLoader   : Fetching config from server at : http://localhost:9093
+2025-08-14T22:40:26.628+05:30  INFO 144 --- [Property-Service] [restartedMain] o.s.c.c.c.ConfigServerConfigDataLoader   : Located environment: name=Property-Service, profiles=[default], label=null, version=577b693cfd8cfeb4cb55e085595edf2a58283140, state=
+2025-08-14T22:40:27.229+05:30  INFO 144 --- [Property-Service] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-14T22:40:27.241+05:30  INFO 144 --- [Property-Service] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 8 ms. Found 1 JPA repository interface.
+2025-08-14T22:40:27.413+05:30  INFO 144 --- [Property-Service] [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=a53ba9dc-2f78-3bb5-b199-b99a45db9320
+2025-08-14T22:40:27.630+05:30  INFO 144 --- [Property-Service] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2025-08-14T22:40:27.633+05:30  INFO 144 --- [Property-Service] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-14T22:40:27.633+05:30  INFO 144 --- [Property-Service] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-08-14T22:40:27.673+05:30  INFO 144 --- [Property-Service] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-08-14T22:40:27.673+05:30  INFO 144 --- [Property-Service] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1045 ms
+2025-08-14T22:40:27.850+05:30  INFO 144 --- [Property-Service] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-14T22:40:27.854+05:30  INFO 144 --- [Property-Service] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-08-14T22:40:27.865+05:30  INFO 144 --- [Property-Service] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-14T22:40:27.866+05:30  INFO 144 --- [Property-Service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Starting...
+2025-08-14T22:40:27.887+05:30  INFO 144 --- [Property-Service] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-3 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7770d27f
+2025-08-14T22:40:27.887+05:30  INFO 144 --- [Property-Service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Start completed.
+2025-08-14T22:40:27.889+05:30  WARN 144 --- [Property-Service] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-08-14T22:40:27.890+05:30  INFO 144 --- [Property-Service] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-3)']
+	Database driver: undefined/unknown
+	Database version: 8.0.42
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-14T22:40:27.942+05:30  INFO 144 --- [Property-Service] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-14T22:40:27.953+05:30  INFO 144 --- [Property-Service] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-14T22:40:28.025+05:30  WARN 144 --- [Property-Service] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-14T22:40:28.060+05:30  WARN 144 --- [Property-Service] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2025-08-14T22:40:28.459+05:30  INFO 144 --- [Property-Service] [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2025-08-14T22:40:28.475+05:30  WARN 144 --- [Property-Service] [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-08-14T22:40:28.481+05:30  INFO 144 --- [Property-Service] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoints beneath base path '/actuator'
+2025-08-14T22:40:28.526+05:30  INFO 144 --- [Property-Service] [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2025-08-14T22:40:28.530+05:30  INFO 144 --- [Property-Service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2025-08-14T22:40:28.531+05:30  INFO 144 --- [Property-Service] [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-14T22:40:28.531+05:30  INFO 144 --- [Property-Service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2025-08-14T22:40:28.531+05:30  INFO 144 --- [Property-Service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2025-08-14T22:40:28.531+05:30  INFO 144 --- [Property-Service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2025-08-14T22:40:28.531+05:30  INFO 144 --- [Property-Service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2025-08-14T22:40:28.532+05:30  INFO 144 --- [Property-Service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2025-08-14T22:40:28.532+05:30  INFO 144 --- [Property-Service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2025-08-14T22:40:28.532+05:30  INFO 144 --- [Property-Service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2025-08-14T22:40:28.575+05:30  INFO 144 --- [Property-Service] [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2025-08-14T22:40:28.575+05:30  INFO 144 --- [Property-Service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2025-08-14T22:40:28.576+05:30  INFO 144 --- [Property-Service] [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-08-14T22:40:28.576+05:30  INFO 144 --- [Property-Service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1755191428576 with initial instances count: 6
+2025-08-14T22:40:28.578+05:30  INFO 144 --- [Property-Service] [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application PROPERTY-SERVICE with eureka with status UP
+2025-08-14T22:40:28.578+05:30  INFO 144 --- [Property-Service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1755191428578, current=UP, previous=STARTING]
+2025-08-14T22:40:28.579+05:30  INFO 144 --- [Property-Service] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PROPERTY-SERVICE/DESKTOP-EM164SF:Property-Service:8081: registering service...
+2025-08-14T22:40:28.583+05:30  INFO 144 --- [Property-Service] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
+2025-08-14T22:40:28.584+05:30  INFO 144 --- [Property-Service] [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8081
+2025-08-14T22:40:28.598+05:30  INFO 144 --- [Property-Service] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PROPERTY-SERVICE/DESKTOP-EM164SF:Property-Service:8081 - registration status: 204
+2025-08-14T22:40:28.612+05:30  INFO 144 --- [Property-Service] [restartedMain] c.w.p.PropertyServiceApplication         : Started PropertyServiceApplication in 3.288 seconds (process running for 750.718)
+2025-08-14T22:40:28.614+05:30  INFO 144 --- [Property-Service] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-08-14T22:40:29.862+05:30  INFO 144 --- [Property-Service] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 14 class path changes (0 additions, 0 deletions, 14 modifications)
+2025-08-14T22:40:29.863+05:30  INFO 144 --- [Property-Service] [Thread-13] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application PROPERTY-SERVICE with eureka with status DOWN
+2025-08-14T22:40:29.863+05:30  INFO 144 --- [Property-Service] [Thread-13] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1755191429863, current=DOWN, previous=UP]
+2025-08-14T22:40:29.865+05:30  INFO 144 --- [Property-Service] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PROPERTY-SERVICE/DESKTOP-EM164SF:Property-Service:8081: registering service...
+2025-08-14T22:40:29.866+05:30  INFO 144 --- [Property-Service] [Thread-13] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-14T22:40:29.869+05:30  INFO 144 --- [Property-Service] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PROPERTY-SERVICE/DESKTOP-EM164SF:Property-Service:8081 - registration status: 204
+2025-08-14T22:40:29.872+05:30  INFO 144 --- [Property-Service] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-08-14T22:40:29.876+05:30  INFO 144 --- [Property-Service] [Thread-13] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-14T22:40:29.877+05:30  INFO 144 --- [Property-Service] [Thread-13] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown initiated...
+2025-08-14T22:40:29.881+05:30  INFO 144 --- [Property-Service] [Thread-13] com.zaxxer.hikari.HikariDataSource       : HikariPool-3 - Shutdown completed.
+2025-08-14T22:40:29.882+05:30  INFO 144 --- [Property-Service] [Thread-13] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2025-08-14T22:40:32.895+05:30  INFO 144 --- [Property-Service] [Thread-13] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2025-08-14T22:40:33.120+05:30  INFO 144 --- [Property-Service] [Thread-13] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PROPERTY-SERVICE/DESKTOP-EM164SF:Property-Service:8081 - deregister  status: 200
+2025-08-14T22:40:33.121+05:30  INFO 144 --- [Property-Service] [Thread-13] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2025-08-14T22:40:35.764+05:30  INFO 144 --- [Property-Service] [restartedMain] c.w.p.PropertyServiceApplication         : Starting PropertyServiceApplication using Java 21.0.7 with PID 144 (D:\Microservices Assignment\Property-Service\target\classes started by sss in D:\Microservices Assignment\Property-Service)
+2025-08-14T22:40:35.764+05:30  INFO 144 --- [Property-Service] [restartedMain] c.w.p.PropertyServiceApplication         : No active profile set, falling back to 1 default profile: "default"
+2025-08-14T22:40:35.768+05:30  INFO 144 --- [Property-Service] [restartedMain] o.s.c.c.c.ConfigServerConfigDataLoader   : Fetching config from server at : http://localhost:9093
+2025-08-14T22:40:35.768+05:30  INFO 144 --- [Property-Service] [restartedMain] o.s.c.c.c.ConfigServerConfigDataLoader   : Located environment: name=Property-Service, profiles=[default], label=null, version=577b693cfd8cfeb4cb55e085595edf2a58283140, state=
+2025-08-14T22:40:36.568+05:30  INFO 144 --- [Property-Service] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-14T22:40:36.577+05:30  INFO 144 --- [Property-Service] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 8 ms. Found 1 JPA repository interface.
+2025-08-14T22:40:36.731+05:30  INFO 144 --- [Property-Service] [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=a53ba9dc-2f78-3bb5-b199-b99a45db9320
+2025-08-14T22:40:36.919+05:30  INFO 144 --- [Property-Service] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2025-08-14T22:40:36.920+05:30  INFO 144 --- [Property-Service] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-14T22:40:36.920+05:30  INFO 144 --- [Property-Service] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-08-14T22:40:36.962+05:30  INFO 144 --- [Property-Service] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-08-14T22:40:36.962+05:30  INFO 144 --- [Property-Service] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1194 ms
+2025-08-14T22:40:37.070+05:30  INFO 144 --- [Property-Service] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-14T22:40:37.073+05:30  INFO 144 --- [Property-Service] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-08-14T22:40:37.081+05:30  INFO 144 --- [Property-Service] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-14T22:40:37.082+05:30  INFO 144 --- [Property-Service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Starting...
+2025-08-14T22:40:37.096+05:30  INFO 144 --- [Property-Service] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-4 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6b89e9ce
+2025-08-14T22:40:37.096+05:30  INFO 144 --- [Property-Service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Start completed.
+2025-08-14T22:40:37.097+05:30  WARN 144 --- [Property-Service] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-08-14T22:40:37.098+05:30  INFO 144 --- [Property-Service] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-4)']
+	Database driver: undefined/unknown
+	Database version: 8.0.42
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-14T22:40:37.147+05:30  INFO 144 --- [Property-Service] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-14T22:40:37.176+05:30  INFO 144 --- [Property-Service] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-14T22:40:37.243+05:30  WARN 144 --- [Property-Service] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-14T22:40:37.264+05:30  WARN 144 --- [Property-Service] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2025-08-14T22:40:37.662+05:30  INFO 144 --- [Property-Service] [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2025-08-14T22:40:37.673+05:30  WARN 144 --- [Property-Service] [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-08-14T22:40:37.677+05:30  INFO 144 --- [Property-Service] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoints beneath base path '/actuator'
+2025-08-14T22:40:37.712+05:30  INFO 144 --- [Property-Service] [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2025-08-14T22:40:37.716+05:30  INFO 144 --- [Property-Service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2025-08-14T22:40:37.716+05:30  INFO 144 --- [Property-Service] [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-14T22:40:37.717+05:30  INFO 144 --- [Property-Service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2025-08-14T22:40:37.717+05:30  INFO 144 --- [Property-Service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2025-08-14T22:40:37.717+05:30  INFO 144 --- [Property-Service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2025-08-14T22:40:37.717+05:30  INFO 144 --- [Property-Service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2025-08-14T22:40:37.717+05:30  INFO 144 --- [Property-Service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2025-08-14T22:40:37.717+05:30  INFO 144 --- [Property-Service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2025-08-14T22:40:37.717+05:30  INFO 144 --- [Property-Service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2025-08-14T22:40:37.759+05:30  INFO 144 --- [Property-Service] [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2025-08-14T22:40:37.760+05:30  INFO 144 --- [Property-Service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2025-08-14T22:40:37.760+05:30  INFO 144 --- [Property-Service] [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-08-14T22:40:37.760+05:30  INFO 144 --- [Property-Service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1755191437760 with initial instances count: 6
+2025-08-14T22:40:37.762+05:30  INFO 144 --- [Property-Service] [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application PROPERTY-SERVICE with eureka with status UP
+2025-08-14T22:40:37.762+05:30  INFO 144 --- [Property-Service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1755191437762, current=UP, previous=STARTING]
+2025-08-14T22:40:37.762+05:30  INFO 144 --- [Property-Service] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PROPERTY-SERVICE/DESKTOP-EM164SF:Property-Service:8081: registering service...
+2025-08-14T22:40:37.767+05:30  INFO 144 --- [Property-Service] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
+2025-08-14T22:40:37.767+05:30  INFO 144 --- [Property-Service] [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8081
+2025-08-14T22:40:37.779+05:30  INFO 144 --- [Property-Service] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PROPERTY-SERVICE/DESKTOP-EM164SF:Property-Service:8081 - registration status: 204
+2025-08-14T22:40:37.786+05:30  INFO 144 --- [Property-Service] [restartedMain] c.w.p.PropertyServiceApplication         : Started PropertyServiceApplication in 4.372 seconds (process running for 759.892)
+2025-08-14T22:40:37.788+05:30  INFO 144 --- [Property-Service] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-08-14T22:41:33.057+05:30  INFO 144 --- [Property-Service] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 3 class path changes (0 additions, 0 deletions, 3 modifications)
+2025-08-14T22:41:33.061+05:30  INFO 144 --- [Property-Service] [Thread-19] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application PROPERTY-SERVICE with eureka with status DOWN
+2025-08-14T22:41:33.061+05:30  INFO 144 --- [Property-Service] [Thread-19] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1755191493061, current=DOWN, previous=UP]
+2025-08-14T22:41:33.062+05:30  INFO 144 --- [Property-Service] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PROPERTY-SERVICE/DESKTOP-EM164SF:Property-Service:8081: registering service...
+2025-08-14T22:41:33.065+05:30  INFO 144 --- [Property-Service] [Thread-19] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-14T22:41:33.084+05:30  INFO 144 --- [Property-Service] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-08-14T22:41:33.086+05:30  INFO 144 --- [Property-Service] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PROPERTY-SERVICE/DESKTOP-EM164SF:Property-Service:8081 - registration status: 204
+2025-08-14T22:41:33.090+05:30  INFO 144 --- [Property-Service] [Thread-19] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-14T22:41:33.092+05:30  INFO 144 --- [Property-Service] [Thread-19] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown initiated...
+2025-08-14T22:41:33.095+05:30  INFO 144 --- [Property-Service] [Thread-19] com.zaxxer.hikari.HikariDataSource       : HikariPool-4 - Shutdown completed.
+2025-08-14T22:41:33.096+05:30  INFO 144 --- [Property-Service] [Thread-19] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2025-08-14T22:41:36.109+05:30  INFO 144 --- [Property-Service] [Thread-19] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2025-08-14T22:41:36.121+05:30  INFO 144 --- [Property-Service] [Thread-19] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PROPERTY-SERVICE/DESKTOP-EM164SF:Property-Service:8081 - deregister  status: 200
+2025-08-14T22:41:36.121+05:30  INFO 144 --- [Property-Service] [Thread-19] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2025-08-14T22:41:36.946+05:30  INFO 144 --- [Property-Service] [restartedMain] c.w.p.PropertyServiceApplication         : Starting PropertyServiceApplication using Java 21.0.7 with PID 144 (D:\Microservices Assignment\Property-Service\target\classes started by sss in D:\Microservices Assignment\Property-Service)
+2025-08-14T22:41:36.947+05:30  INFO 144 --- [Property-Service] [restartedMain] c.w.p.PropertyServiceApplication         : No active profile set, falling back to 1 default profile: "default"
+2025-08-14T22:41:36.948+05:30  INFO 144 --- [Property-Service] [restartedMain] o.s.c.c.c.ConfigServerConfigDataLoader   : Fetching config from server at : http://localhost:9093
+2025-08-14T22:41:36.948+05:30  INFO 144 --- [Property-Service] [restartedMain] o.s.c.c.c.ConfigServerConfigDataLoader   : Located environment: name=Property-Service, profiles=[default], label=null, version=577b693cfd8cfeb4cb55e085595edf2a58283140, state=
+2025-08-14T22:41:37.414+05:30  INFO 144 --- [Property-Service] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-14T22:41:37.421+05:30  INFO 144 --- [Property-Service] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6 ms. Found 1 JPA repository interface.
+2025-08-14T22:41:37.521+05:30  INFO 144 --- [Property-Service] [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=a53ba9dc-2f78-3bb5-b199-b99a45db9320
+2025-08-14T22:41:37.612+05:30  INFO 144 --- [Property-Service] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2025-08-14T22:41:37.614+05:30  INFO 144 --- [Property-Service] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-14T22:41:37.614+05:30  INFO 144 --- [Property-Service] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-08-14T22:41:37.647+05:30  INFO 144 --- [Property-Service] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-08-14T22:41:37.648+05:30  INFO 144 --- [Property-Service] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 700 ms
+2025-08-14T22:41:37.723+05:30  INFO 144 --- [Property-Service] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-14T22:41:37.725+05:30  INFO 144 --- [Property-Service] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-08-14T22:41:37.731+05:30  INFO 144 --- [Property-Service] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-14T22:41:37.732+05:30  INFO 144 --- [Property-Service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Starting...
+2025-08-14T22:41:37.743+05:30  INFO 144 --- [Property-Service] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-5 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5d01e238
+2025-08-14T22:41:37.743+05:30  INFO 144 --- [Property-Service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Start completed.
+2025-08-14T22:41:37.744+05:30  WARN 144 --- [Property-Service] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-08-14T22:41:37.744+05:30  INFO 144 --- [Property-Service] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-5)']
+	Database driver: undefined/unknown
+	Database version: 8.0.42
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-14T22:41:37.776+05:30  INFO 144 --- [Property-Service] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-14T22:41:37.785+05:30  INFO 144 --- [Property-Service] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-14T22:41:37.827+05:30  WARN 144 --- [Property-Service] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-14T22:41:37.843+05:30  WARN 144 --- [Property-Service] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2025-08-14T22:41:38.157+05:30  INFO 144 --- [Property-Service] [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2025-08-14T22:41:38.166+05:30  WARN 144 --- [Property-Service] [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-08-14T22:41:38.169+05:30  INFO 144 --- [Property-Service] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoints beneath base path '/actuator'
+2025-08-14T22:41:38.200+05:30  INFO 144 --- [Property-Service] [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2025-08-14T22:41:38.202+05:30  INFO 144 --- [Property-Service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2025-08-14T22:41:38.202+05:30  INFO 144 --- [Property-Service] [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-14T22:41:38.202+05:30  INFO 144 --- [Property-Service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2025-08-14T22:41:38.202+05:30  INFO 144 --- [Property-Service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2025-08-14T22:41:38.202+05:30  INFO 144 --- [Property-Service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2025-08-14T22:41:38.202+05:30  INFO 144 --- [Property-Service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2025-08-14T22:41:38.202+05:30  INFO 144 --- [Property-Service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2025-08-14T22:41:38.202+05:30  INFO 144 --- [Property-Service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2025-08-14T22:41:38.202+05:30  INFO 144 --- [Property-Service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2025-08-14T22:41:38.238+05:30  INFO 144 --- [Property-Service] [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2025-08-14T22:41:38.240+05:30  INFO 144 --- [Property-Service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2025-08-14T22:41:38.240+05:30  INFO 144 --- [Property-Service] [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-08-14T22:41:38.241+05:30  INFO 144 --- [Property-Service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1755191498241 with initial instances count: 6
+2025-08-14T22:41:38.244+05:30  INFO 144 --- [Property-Service] [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application PROPERTY-SERVICE with eureka with status UP
+2025-08-14T22:41:38.244+05:30  INFO 144 --- [Property-Service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1755191498244, current=UP, previous=STARTING]
+2025-08-14T22:41:38.244+05:30  INFO 144 --- [Property-Service] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PROPERTY-SERVICE/DESKTOP-EM164SF:Property-Service:8081: registering service...
+2025-08-14T22:41:38.250+05:30  INFO 144 --- [Property-Service] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
+2025-08-14T22:41:38.252+05:30  INFO 144 --- [Property-Service] [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8081
+2025-08-14T22:41:38.268+05:30  INFO 144 --- [Property-Service] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PROPERTY-SERVICE/DESKTOP-EM164SF:Property-Service:8081 - registration status: 204
+2025-08-14T22:41:38.274+05:30  INFO 144 --- [Property-Service] [restartedMain] c.w.p.PropertyServiceApplication         : Started PropertyServiceApplication in 2.088 seconds (process running for 820.38)
+2025-08-14T22:41:38.276+05:30  INFO 144 --- [Property-Service] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-08-14T22:41:39.586+05:30  INFO 144 --- [Property-Service] [File Watcher] rtingClassPathChangeChangedEventListener : Restarting due to 14 class path changes (0 additions, 0 deletions, 14 modifications)
+2025-08-14T22:41:39.588+05:30  INFO 144 --- [Property-Service] [Thread-25] o.s.c.n.e.s.EurekaServiceRegistry        : Unregistering application PROPERTY-SERVICE with eureka with status DOWN
+2025-08-14T22:41:39.588+05:30  INFO 144 --- [Property-Service] [Thread-25] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1755191499588, current=DOWN, previous=UP]
+2025-08-14T22:41:39.588+05:30  INFO 144 --- [Property-Service] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PROPERTY-SERVICE/DESKTOP-EM164SF:Property-Service:8081: registering service...
+2025-08-14T22:41:39.589+05:30  INFO 144 --- [Property-Service] [Thread-25] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2025-08-14T22:41:39.594+05:30  INFO 144 --- [Property-Service] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2025-08-14T22:41:39.599+05:30  INFO 144 --- [Property-Service] [Thread-25] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-08-14T22:41:39.599+05:30  INFO 144 --- [Property-Service] [Thread-25] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown initiated...
+2025-08-14T22:41:39.602+05:30  INFO 144 --- [Property-Service] [Thread-25] com.zaxxer.hikari.HikariDataSource       : HikariPool-5 - Shutdown completed.
+2025-08-14T22:41:39.603+05:30  INFO 144 --- [Property-Service] [Thread-25] com.netflix.discovery.DiscoveryClient    : Shutting down DiscoveryClient ...
+2025-08-14T22:41:39.610+05:30  INFO 144 --- [Property-Service] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PROPERTY-SERVICE/DESKTOP-EM164SF:Property-Service:8081 - registration status: 204
+2025-08-14T22:41:39.610+05:30  INFO 144 --- [Property-Service] [Thread-25] com.netflix.discovery.DiscoveryClient    : Unregistering ...
+2025-08-14T22:41:39.624+05:30  INFO 144 --- [Property-Service] [Thread-25] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PROPERTY-SERVICE/DESKTOP-EM164SF:Property-Service:8081 - deregister  status: 200
+2025-08-14T22:41:39.624+05:30  INFO 144 --- [Property-Service] [Thread-25] com.netflix.discovery.DiscoveryClient    : Completed shut down of DiscoveryClient
+2025-08-14T22:41:40.424+05:30  INFO 144 --- [Property-Service] [restartedMain] c.w.p.PropertyServiceApplication         : Starting PropertyServiceApplication using Java 21.0.7 with PID 144 (D:\Microservices Assignment\Property-Service\target\classes started by sss in D:\Microservices Assignment\Property-Service)
+2025-08-14T22:41:40.424+05:30  INFO 144 --- [Property-Service] [restartedMain] c.w.p.PropertyServiceApplication         : No active profile set, falling back to 1 default profile: "default"
+2025-08-14T22:41:40.425+05:30  INFO 144 --- [Property-Service] [restartedMain] o.s.c.c.c.ConfigServerConfigDataLoader   : Fetching config from server at : http://localhost:9093
+2025-08-14T22:41:40.425+05:30  INFO 144 --- [Property-Service] [restartedMain] o.s.c.c.c.ConfigServerConfigDataLoader   : Located environment: name=Property-Service, profiles=[default], label=null, version=577b693cfd8cfeb4cb55e085595edf2a58283140, state=
+2025-08-14T22:41:40.803+05:30  INFO 144 --- [Property-Service] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-08-14T22:41:40.811+05:30  INFO 144 --- [Property-Service] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 6 ms. Found 1 JPA repository interface.
+2025-08-14T22:41:40.899+05:30  INFO 144 --- [Property-Service] [restartedMain] o.s.cloud.context.scope.GenericScope     : BeanFactory id=a53ba9dc-2f78-3bb5-b199-b99a45db9320
+2025-08-14T22:41:41.009+05:30  INFO 144 --- [Property-Service] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8081 (http)
+2025-08-14T22:41:41.010+05:30  INFO 144 --- [Property-Service] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-08-14T22:41:41.010+05:30  INFO 144 --- [Property-Service] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.43]
+2025-08-14T22:41:41.049+05:30  INFO 144 --- [Property-Service] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-08-14T22:41:41.050+05:30  INFO 144 --- [Property-Service] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 625 ms
+2025-08-14T22:41:41.126+05:30  INFO 144 --- [Property-Service] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-08-14T22:41:41.128+05:30  INFO 144 --- [Property-Service] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-08-14T22:41:41.135+05:30  INFO 144 --- [Property-Service] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-08-14T22:41:41.136+05:30  INFO 144 --- [Property-Service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Starting...
+2025-08-14T22:41:41.146+05:30  INFO 144 --- [Property-Service] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-6 - Added connection com.mysql.cj.jdbc.ConnectionImpl@d03e78e
+2025-08-14T22:41:41.147+05:30  INFO 144 --- [Property-Service] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-6 - Start completed.
+2025-08-14T22:41:41.148+05:30  WARN 144 --- [Property-Service] [restartedMain] org.hibernate.orm.deprecation            : HHH90000025: MySQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-08-14T22:41:41.148+05:30  INFO 144 --- [Property-Service] [restartedMain] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-6)']
+	Database driver: undefined/unknown
+	Database version: 8.0.42
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-08-14T22:41:41.179+05:30  INFO 144 --- [Property-Service] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-08-14T22:41:41.215+05:30  INFO 144 --- [Property-Service] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-08-14T22:41:41.259+05:30  WARN 144 --- [Property-Service] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-08-14T22:41:41.274+05:30  WARN 144 --- [Property-Service] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2025-08-14T22:41:41.573+05:30  INFO 144 --- [Property-Service] [restartedMain] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2025-08-14T22:41:41.583+05:30  WARN 144 --- [Property-Service] [restartedMain] iguration$LoadBalancerCaffeineWarnLogger : Spring Cloud LoadBalancer is currently working with the default cache. While this cache implementation is useful for development and tests, it's recommended to use Caffeine cache in production.You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2025-08-14T22:41:41.587+05:30  INFO 144 --- [Property-Service] [restartedMain] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 2 endpoints beneath base path '/actuator'
+2025-08-14T22:41:41.620+05:30  INFO 144 --- [Property-Service] [restartedMain] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2025-08-14T22:41:41.622+05:30  INFO 144 --- [Property-Service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2025-08-14T22:41:41.622+05:30  INFO 144 --- [Property-Service] [restartedMain] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-14T22:41:41.622+05:30  INFO 144 --- [Property-Service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2025-08-14T22:41:41.622+05:30  INFO 144 --- [Property-Service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2025-08-14T22:41:41.622+05:30  INFO 144 --- [Property-Service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2025-08-14T22:41:41.622+05:30  INFO 144 --- [Property-Service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2025-08-14T22:41:41.622+05:30  INFO 144 --- [Property-Service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2025-08-14T22:41:41.622+05:30  INFO 144 --- [Property-Service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2025-08-14T22:41:41.622+05:30  INFO 144 --- [Property-Service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2025-08-14T22:41:41.644+05:30  INFO 144 --- [Property-Service] [restartedMain] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2025-08-14T22:41:41.644+05:30  INFO 144 --- [Property-Service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 30
+2025-08-14T22:41:41.645+05:30  INFO 144 --- [Property-Service] [restartedMain] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-08-14T22:41:41.645+05:30  INFO 144 --- [Property-Service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1755191501645 with initial instances count: 6
+2025-08-14T22:41:41.647+05:30  INFO 144 --- [Property-Service] [restartedMain] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application PROPERTY-SERVICE with eureka with status UP
+2025-08-14T22:41:41.647+05:30  INFO 144 --- [Property-Service] [restartedMain] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1755191501647, current=UP, previous=STARTING]
+2025-08-14T22:41:41.647+05:30  INFO 144 --- [Property-Service] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PROPERTY-SERVICE/DESKTOP-EM164SF:Property-Service:8081: registering service...
+2025-08-14T22:41:41.650+05:30  INFO 144 --- [Property-Service] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8081 (http) with context path '/'
+2025-08-14T22:41:41.651+05:30  INFO 144 --- [Property-Service] [restartedMain] .s.c.n.e.s.EurekaAutoServiceRegistration : Updating port to 8081
+2025-08-14T22:41:41.668+05:30  INFO 144 --- [Property-Service] [restartedMain] c.w.p.PropertyServiceApplication         : Started PropertyServiceApplication in 1.978 seconds (process running for 823.774)
+2025-08-14T22:41:41.669+05:30  INFO 144 --- [Property-Service] [DiscoveryClient-InstanceInfoReplicator-%d] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_PROPERTY-SERVICE/DESKTOP-EM164SF:Property-Service:8081 - registration status: 204
+2025-08-14T22:41:41.671+05:30  INFO 144 --- [Property-Service] [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2025-08-14T22:46:41.634+05:30  INFO 144 --- [Property-Service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-14T22:51:41.640+05:30  INFO 144 --- [Property-Service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-08-14T22:56:41.643+05:30  INFO 144 --- [Property-Service] [AsyncResolver-bootstrap-executor-%d] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
